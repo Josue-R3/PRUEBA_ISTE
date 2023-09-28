@@ -5,6 +5,7 @@
     $producto = new Producto();
 
     switch($_GET['op']){
+        
         case"listar":
             $datos=$producto->get_producto();
             $data= Array();
@@ -28,5 +29,36 @@
                 "aaData"=>$data);
             echo json_encode($results);
             break;
+
+            case "guardaryeditar":
+                $datos=$producto->get_producto_id($_POST['id']);
+                if(empty($_POST['id'])){
+                    if(is_array($datos)==true and count($datos)==0){
+                        $producto->insert_producto($_POST['nombre']
+                        ,$_POST['descripcion']
+                        ,$_POST['precio']
+                        ,$_POST['stock']);
+                    }
+                }else{
+                    $producto->update_producto($_POST['nombre'],
+                    $_POST['descripcion'],
+                    $_POST['precio'],
+                    $_POST['stock']);
+                }
+                break;
+
+                case "mostrar":
+                $datos=$producto->get_producto_id($_POST['id']);
+                if(is_array($datos)==true and count ($datos)>0)
+                    foreach($datos as $row){
+                        $output['id']=$row['id'];
+                        $output['nombre']=$row['nombre'];
+                    }
+                break;
+
+                case "eliminar":
+                    $producto->delete_producto_id($_POST['id']);
+                    break;
+
     }
 ?>

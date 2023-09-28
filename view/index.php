@@ -102,10 +102,10 @@
               <table id="producto_data" class="table display responsive nowrap">
                 <thead>
                   <tr>
-                    <th class="wd-15p">Nombre</th>
-                    <th class="wd-15p">Descripcion</th>
-                    <th class="wd-15p">Precio</th>
-                    <th class="wd-15p">Stock</th>
+                    <th class="">Nombre</th>
+                    <th class="">Descripcion</th>
+                    <th class="">Precio</th>
+                    <th class="">Stock</th>
                     <th class="wd-5p"></th>
                     <th class="wd-5p"></th>
                   </tr>
