@@ -8,10 +8,12 @@ Herramientas que deben estar instaladas y configuradas de antemano:
 
 Para poder tener el entorno de desarrollo y pruebas locales con el servidor apache y mysql
 
-####Introducción:
-De antemano agradecer a la institución por darme la oportunidad de postular y probarme a mi mismo con retos y oportunidades, siento que pude haber realizado las cosas de mejor manera pero no me detendre aprendiendo.
+El proyecto se debe ejecutar desde la ruta: http://localhost:3000/view/index.php (cambiar el puerto dependiendo de la configuración en su equipo)
 
-## Ejercicio:
+# Introducción:
+De antemano agradecer a la institución por darme la oportunidad de postular y probarme a mi mismo con retos y oportunidades, siento que pude haber realizado las cosas de mejor manera pero no me detendre aprendiendo y mejorando.
+
+# Ejercicio:
 **Creación de CRUD con Búsqueda, Tabla de Datos y Despliegue**
 
 **Instrucciones:** El objetivo de esta prueba es evaluar tu capacidad para implementar un CRUD completo (Crear, Leer, Actualizar, Eliminar) con opción de búsqueda, interactuar con una base de datos y diseñar una interfaz de usuario amigable. Puedes elegir cualquier lenguaje de programación, base de datos y plataforma de despliegue con la que te sientas cómodo. Sin embargo, se otorgarán puntos adicionales si utilizas tecnologías que son especialmente relevantes para nuestra organización, tales como: Python, Javascript, PostgreSQL, AWS (EC2), Next.js, Django, y Flutter.
@@ -51,6 +53,10 @@ Desarrolla tanto la interfaz de usuario como la lógica del servidor (backend) p
  
 - *Para esta tarea utilice el lenguaje de php usando el patron de diseño MVC que llevaba tiempo sin volver a utilizar pero lo vi una buena practica para la creacion de este CRUD, sin embargo funciones como las de Insertar y actualizar tuvieron conflictos que por el tiempo de entregar no se me fue posible solucionar*
 ![Tarea2.png](docs/Tarea2.png)
+![eliminar.png](docs/eliminar.png)
+
+- *Sin embargo habia realizado un crud funcional sin mucha experiencia visual enfocado en el funcionamiento el cual se puede acceder desde la carpeta "crud_simple" ejecutando index.php*
+![simple1.png](docs/simple1.png)
 
 **Tarea 3: Agregar Función de Búsqueda**
 
@@ -71,9 +77,7 @@ Si es posible, despliega el sistema en un entorno en línea, como una plataforma
 Aunque el enfoque principal es la funcionalidad, la presentación y la usabilidad también son importantes. Considera implementar un diseño amigable y coherente para la interfaz de usuario.
 
 * Para esta tarea utilice conocimientos basicos de CSS y Javascript para colocar el CRUD dentro de un Sidebar de contenidos que podria ser utilizado en un sistema con apartados y botones para modo claro y modo oscuro, ademas de que las librerias Datatables permiten descargar los registros en hojas de formato excel.
-
 ![Tarea5.1](docs/Tarea5.1.png)
-
 ![Tarea5.2](docs/Tarea5.2.png)
  
  
