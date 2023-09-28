@@ -1,5 +1,5 @@
 # PRUEBA_ISTE
-##Bienvenido a este proyecto
+**Bienvenido a este proyecto**
 
 **Instalación:**
 Herramientas que deben estar instaladas y configuradas de antemano:
@@ -49,7 +49,7 @@ Desarrolla tanto la interfaz de usuario como la lógica del servidor (backend) p
 ·         Eliminar Producto: Remueve un producto de la base de datos según su ID.
 
  
-* Para esta tarea utilice el lenguaje de php usando el patron de diseño MVC que llevaba tiempo sin volver a utilizar pero lo vi una buena practica para la creacion de este CRUD, sin embargo funciones como las de Insertar y actualizar tuvieron conflictos que por el tiempo de entregar no se me fue posible solucionar*
+- *Para esta tarea utilice el lenguaje de php usando el patron de diseño MVC que llevaba tiempo sin volver a utilizar pero lo vi una buena practica para la creacion de este CRUD, sin embargo funciones como las de Insertar y actualizar tuvieron conflictos que por el tiempo de entregar no se me fue posible solucionar*
 ![Tarea2.png](docs/Tarea2.png)
 
 **Tarea 3: Agregar Función de Búsqueda**
