@@ -84,6 +84,8 @@ function editar(id){
         $('#id').val(data.id);
         $('#nombre').val(data.nombre);
         $('#descripcion').val(data.descripcion);
+        $('#precio').val(data.precio);
+        $('#stock').val(data.stock);
     });
     $('#mdltitulo').html('Editar Registro');
     $('#modalmantenimiento').modal('show');
