@@ -35,7 +35,7 @@
         }
 
 
-        public function insert_producto($nombre){
+        /*public function insert_producto($nombre){
             $conectar=parent::conexion();
             parent::set_names();
             $sql="INSERT INTO productos 
@@ -44,9 +44,21 @@
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$nombre);
             return $resultado=$sql->fetchAll();
+        }*/
+
+        
+        public function insert_producto($nombre){
+            $conectar=parent::conexion();
+            parent::set_names();
+            $sql="INSERT INTO productos 
+            (id, nombre, descripcion, precio, stock, estado) 
+            VALUES (NULL, ?, ?, ?, ?, 1)";
+            $sql=$conectar->prepare($sql);
+            $sql->bindValue(1,$nombre);
+            return $resultado=$sql->execute();
         }
 
-        public function update_producto($id,$nombre){
+        /*public function update_producto($id,$nombre){
             $conectar=parent::conexion();
             parent::set_names();
             $sql="UPDATE productos
@@ -60,7 +72,26 @@
             $sql->bindValue(2,$nombre);
             $sql->execute();
             return $resultado=$sql->fetchAll();
-        }
+        }*/
+
+    public function update_producto($id,$nombre,$descripcion,$precio,$stock){
+    $conectar=parent::conexion();
+    parent::set_names();
+    $sql="UPDATE productos
+    SET nombre=?,
+    descripcion=?,
+    precio=?,
+    stock=?
+    WHERE id=?";
+    $sql=$conectar->prepare($sql);
+    $sql->bindValue(1,$nombre);
+    $sql->bindValue(2,$descripcion);
+    $sql->bindValue(3,$precio);
+    $sql->bindValue(4,$stock);
+    $sql->bindValue(5,$id);
+    $resultado=$sql->execute();
+    return $resultado;
+}
     }
 
     
