@@ -30,7 +30,7 @@
             echo json_encode($results);
             break;
 
-            case "guardaryeditar":
+            /*case "guardaryeditar":
                 $datos=$producto->get_producto_id($_POST["id"]);
                 if(empty($_POST['id'])){
                     if(is_array($datos)==true and count($datos)==0){
@@ -39,7 +39,21 @@
                 }else{
                     $producto->update_producto($_POST["id"],$_POST["nombre"]);
                 }
-                break;
+                break;*/
+                case "guardaryeditar":
+                    $datos=$producto->get_producto_id($_POST["id"]);
+                    if(empty($_POST['id'])){
+                      if(is_array($datos)==true and count($datos)==0){
+                        $producto->insert_producto($_POST["nombre"]);
+                      }
+                    }else{
+                      $producto->update_producto($_POST["id"]
+                      ,$_POST["nombre"]
+                      ,$_POST["descripcion"]
+                      ,$_POST["precio"]
+                    ,$_POST["stock"]);
+                    }
+                    break;
 
                 case "mostrar":
                 $datos=$producto->get_producto_id($_POST["id"]);
